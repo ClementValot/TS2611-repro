@@ -1,0 +1,17 @@
+{
+  "name": "ts2611-repro",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run emit-types && npm run check-emitted-types",
+    "emit-types": "tsc",
+    "check-emitted-types": "tsc --noemit --project tsconfig.types.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
